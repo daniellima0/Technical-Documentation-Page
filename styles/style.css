@@ -9,12 +9,12 @@ header {
 }
 
 p {
-    color:#4d4e53;
+    color: #4d4e53;
     font-size: 0.96rem;
 }
 
 ul {
-    color:#4d4e53;
+    color: #4d4e53;
     font-size: 0.96rem;
 }
 
@@ -87,12 +87,37 @@ code {
     margin-left: 1rem;
 }
 
-@media screen {
-    
-}
+@media (max-width: 500px) {
 
-/* Query: 
-    - How to use @media in a efficient way? 
-    - How to make the divider go all the way up?
-    - How to bring the divider and the navbar container closer together horizontally (apply background-color to the navbar to better visualization)?
-*/
+    p, li {
+        font-size: 0.8rem;
+    }
+
+    header {
+        font-size: 1.6rem;
+    }
+
+    #navbar {
+        display: none;
+    }
+    #section-container {
+        border: none;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    section {
+        margin: 0;
+    }
+    section p {
+        width: 100%;
+        margin: 1rem 0;
+        padding: 0;
+    }
+    .main-section {
+        margin: 0;
+    }
+    .description {
+        margin: 0;
+    }
+}
